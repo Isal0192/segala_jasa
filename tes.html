@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigasi dengan Tailwind</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
+  <nav class="bg-gray-800 p-4">
+    <div class="container mx-auto flex items-center justify-between">
+      <!-- Nama Website -->
+      <div class="text-xl font-bold">NAMA Website</div>
+
+      <!-- Menu Navigasi -->
+      <ul class="hidden md:flex space-x-6">
+        <li class="relative group">
+          <button class="hover:text-green-400">desain halaman ▼</button>
+          <ul class="absolute left-0 top-full hidden w-40 bg-gray-700 group-hover:block">
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-600">Halaman 1</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-600">Halaman 2</a></li>
+          </ul>
+        </li>
+        <li class="relative group">
+          <button class="hover:text-green-400">desain element ▼</button>
+          <ul class="absolute left-0 top-full hidden w-40 bg-gray-700 group-hover:block">
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-600">Element 1</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-600">Element 2</a></li>
+          </ul>
+        </li>
+        <li class="relative group">
+          <button class="hover:text-green-400">tips and trick ▼</button>
+          <ul class="absolute left-0 top-full hidden w-40 bg-gray-700 group-hover:block">
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-600">Tip 1</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-gray-600">Tip 2</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- Tombol Sign In -->
+      <div>
+        <a href="#" class="bg-red-500 hover:bg-red-600 px-4 py-2 rounded text-white">SIGN IN</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Konten lainnya -->
+  <div class="container mx-auto mt-10 text-center">
+    <h1 class="text-3xl font-bold">Selamat Datang di NAMA Website</h1>
+    <p class="text-gray-400 mt-4">Website ini menggunakan Tailwind CSS untuk navigasi dan elemen lainnya.</p>
+  </div>
+</body>
+</html>
