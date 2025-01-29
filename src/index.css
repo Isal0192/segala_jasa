@@ -1,4 +1,6 @@
 :root {
+  --btn-color : #39ff14;
+
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -12,6 +14,32 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+/* buat color palet */
 
 @import "tailwindcss";
 
+<<<<<<< HEAD
+=======
+.color-black-00{
+  color:  #8e8e8e;
+}
+.btn-collor{
+  background-color: var(--btn-color);
+}
+
+.btn-aja {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.rotate {
+  display: inline-block;
+  transition: transform 0.3s ease; /* Animasi rotasi */
+}
+
+.btn-aja:hover .rotate {
+  transform: rotate(180deg); /* Rotasi saat hover */
+}
+>>>>>>> 082b9745626a75cd1ddabe0d38f23080426eeae5
