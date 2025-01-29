@@ -1,8 +1,14 @@
 import Navigasi from "./component/fragment/Navigasi";
+import Card from "./component/fragment/Card";
+import Footer from "./component/fragment/Footer"; 
 
 function App() {
   return (
-    <Navigasi/>
+    <div>
+      <Navigasi />
+      <Card />
+      <Footer />
+    </div>
   );
 }
 
